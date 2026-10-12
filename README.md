@@ -10,6 +10,27 @@ RAII、`std::thread`/`std::mutex` 替代了原版的裸全局变量、`pthread` 
 
 ---
 
+## 运行截图
+
+### 触摸屏端（PC 上用 SDL2 窗口模拟）
+
+| 主界面 | 一键场景提示 |
+| :---: | :---: |
+| ![主界面](docs/screenshots/01-主界面.png) | ![一键场景提示](docs/screenshots/02-主界面-一键场景提示.png) |
+| ![客厅](docs/screenshots/03-客厅页.png) | ![场景自定义设置](docs/screenshots/04-场景自定义设置.png) |
+
+### Web 控制端（内嵌 HTTP 服务器，手机 / PC 浏览器访问同一份状态）
+
+| 首页 | 卧室 |
+| :---: | :---: |
+| ![网页端首页](docs/screenshots/05-网页端-首页.png) | ![网页端卧室](docs/screenshots/06-网页端-卧室页.png) |
+
+| 场景自定义设置 |  |
+| :---: | :---: |
+| ![网页端场景自定义设置](docs/screenshots/07-网页端-场景设置.png) |  |
+
+---
+
 ## 功能
 
 - **四个房间**：客厅 8 设备、卧室 8 设备、厨房 8 设备、卫生间 6 设备
@@ -258,4 +279,5 @@ Montserrat 字体。
 ## 已验证环境
 
 - 编译与调试：Ubuntu（x86_64），g++（C++17），CMake 3.10+，`libsdl2-dev` + `libsdl2-image-dev`
+  （本 README 的运行截图即在该环境下编译并运行所得）
 - 目标平台：RK3568（aarch64），Linux，Framebuffer + evdev
