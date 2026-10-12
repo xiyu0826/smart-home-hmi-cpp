@@ -1,0 +1,22 @@
+# 统一以 LF 存入仓库，避免 Windows / Linux 两端提交时出现整文件行尾差异
+* text=auto eol=lf
+
+# 源码与文档
+*.c      text diff=cpp
+*.h      text diff=cpp
+*.cpp    text diff=cpp
+*.hpp    text diff=cpp
+*.txt    text
+*.md     text
+*.sh     text eol=lf
+CMakeLists.txt text
+
+# 二进制资源：不做行尾转换，也不参与文本 diff
+*.bmp    binary
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ttf    binary
+*.ttc    binary
+*.bin    binary

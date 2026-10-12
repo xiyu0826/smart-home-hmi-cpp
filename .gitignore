@@ -1,0 +1,36 @@
+# ========== 构建产物 ==========
+build/
+bin/
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+
+# ========== 第三方依赖 ==========
+# 由 scripts/fetch_deps.sh 自动拉取，不入库
+/lvgl/
+/freetype-2.13.3/
+
+# ========== 字体 ==========
+# 中文字体受版权保护，不入库；见 README「中文字体」一节
+*.ttf
+*.ttc
+*.otf
+
+# ========== 本地生成物 ==========
+tools/gen_icons
+
+# ========== 编辑器 / IDE ==========
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cache/
+compile_commands.json
+
+# ========== 操作系统 ==========
+.DS_Store
+Thumbs.db
+desktop.ini
