@@ -8,6 +8,8 @@
 本项目是对前一版 C 实现的 C++17 重构——功能、场景与接口保持一致，用类与命名空间、
 RAII、`std::thread`/`std::mutex` 替代了原版的裸全局变量、`pthread` 与手写定长缓冲区。
 
+> **C 语言原始实现 → [smart-home-hmi-c](https://github.com/xiyu0826/smart-home-hmi-c)**
+
 ---
 
 ## 运行截图
@@ -87,7 +89,7 @@ LVGL 与 FreeType 的源码**不在本仓库中**（第三方代码，合计 140
 命令即可自动拉取到正确位置：
 
 ```bash
-./scripts/fetch_deps.sh
+bash scripts/fetch_deps.sh
 ```
 
 > 拉下来的目录已在 `.gitignore` 中排除，不要提交。
@@ -97,7 +99,7 @@ LVGL 与 FreeType 的源码**不在本仓库中**（第三方代码，合计 140
 ```bash
 sudo apt-get install build-essential cmake libsdl2-dev libsdl2-image-dev
 
-./scripts/fetch_deps.sh
+bash scripts/fetch_deps.sh
 
 mkdir build && cd build
 cmake ..
